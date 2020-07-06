@@ -1,0 +1,33 @@
+Body {
+    margin: 0
+}
+
+.MuiButton-containedPrimary{
+    color: #fff;
+    background-color: #BBB !important;
+}
+
+.MuiButton-containedPrimary:hover{
+    background-color: #000 !important;
+    justify-content: space-around;
+}
+
+
+.simple-form {
+    & > *:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.show-page:nth-child(1) {
+    & > *:nth-child(1){
+        & > *:nth-child(2) {
+            display: flex;
+            flex-wrap: wrap;
+            & > * {
+                margin: 10px 20px;
+            } 
+        }
+    }
+}
